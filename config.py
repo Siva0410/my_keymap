@@ -44,6 +44,13 @@ define_conditional_multipurpose_modmap(lambda wm_class, device_name: device_name
 })
 
 
+# Keybindings for Gnome-temrinal
+define_keymap(re.compile("Gnome-teminal"), {
+    #C-y paste
+    K("C-y"): K("C-Shift-v"),
+}, "Gnome-terminal")
+
+
 # Keybindings for Firefox/Chrome
 define_keymap(re.compile("Firefox|Google-chrome"), {
     # Ctrl+Alt+j/k to switch next/previous tab
